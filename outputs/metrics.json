@@ -1,0 +1,44 @@
+{
+  "metrics_by_group": {
+    "o_to_dien": {
+      "best_model": "linear_regression",
+      "forecast_adjustment": "fallback_linear_trend",
+      "results": [
+        {
+          "model_name": "linear_regression",
+          "mae": 5.9151005992961,
+          "rmse": 7.400132880754131,
+          "mape_percent": 47.83889425027487,
+          "r2": 0.009322998069221655
+        },
+        {
+          "model_name": "random_forest",
+          "mae": 10.022329999999998,
+          "rmse": 12.476026518065815,
+          "mape_percent": 86.19772766756904,
+          "r2": -1.8158247578785125
+        }
+      ]
+    },
+    "xe_may_dien": {
+      "best_model": "random_forest",
+      "forecast_adjustment": "fallback_linear_trend",
+      "results": [
+        {
+          "model_name": "linear_regression",
+          "mae": 17.523872605290922,
+          "rmse": 21.38887398378929,
+          "mape_percent": 146.6329275442762,
+          "r2": -57.16141149884454
+        },
+        {
+          "model_name": "random_forest",
+          "mae": 4.3995916666666695,
+          "rmse": 5.1939819828746,
+          "mape_percent": 37.7962385046672,
+          "r2": -2.429730312212152
+        }
+      ]
+    }
+  }
+}
