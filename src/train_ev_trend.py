@@ -20,7 +20,7 @@ DEFAULT_GROUP_COL = "vehicle_group"
 
 TIME_ALIASES = ("thoi_gian", "date_time", "date", "year")
 PRICE_ALIASES = ("gia_tien", "price", "vehicle_price", "vehicle_price_million")
-GROUP_ALIASES = ("vehicle_group", "loai_phuong_tien")
+GROUP_ALIASES = ("vehicle_group", "nhom_phuong_tien")
 
 
 @dataclass
