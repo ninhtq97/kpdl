@@ -19,7 +19,7 @@ DEFAULT_MAX_LAG = 3
 DEFAULT_GROUP_COL = "vehicle_group"
 
 TIME_ALIASES = ("thoi_gian", "date_time", "date", "year")
-PRICE_ALIASES = ("gia_tien_vnd", "price_vnd", "vehicle_price_vnd", "vehicle_price_million_vnd")
+PRICE_ALIASES = ("gia_tien", "price", "vehicle_price", "vehicle_price_million")
 GROUP_ALIASES = ("vehicle_group", "loai_phuong_tien")
 
 
@@ -92,12 +92,12 @@ def normalize_input_schema(df: pd.DataFrame) -> pd.DataFrame:
     for price_col in PRICE_ALIASES:
         if price_col not in work.columns:
             continue
-        if price_col == "vehicle_price_million_vnd":
-            work["vehicle_price_vnd"] = (
+        if price_col == "vehicle_price_million":
+            work["vehicle_price"] = (
                 pd.to_numeric(work[price_col], errors="coerce") * 1_000_000
             )
         else:
-            work["vehicle_price_vnd"] = pd.to_numeric(work[price_col], errors="coerce")
+            work["vehicle_price"] = pd.to_numeric(work[price_col], errors="coerce")
         break
 
     if "year" in work.columns:

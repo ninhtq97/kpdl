@@ -1,4 +1,4 @@
-date_time,ev_share_percent,vehicle_type,price_vnd,color,drive_type,battery_capacity_kwh,range_km,charge_time_hours,motor_power_kw,torque_nm,fast_charge_support,warranty_years,seats,charging_stations,fuel_price_index,gdp_per_capita,battery_price_index,urbanization_rate,domestic_ev_production,vehicle_group
+date_time,ev_share_percent,vehicle_type,price,color,drive_type,battery_capacity_kwh,range_km,charge_time_hours,motor_power_kw,torque_nm,fast_charge_support,warranty_years,seats,charging_stations,fuel_price_index,gdp_per_capita,battery_price_index,urbanization_rate,domestic_ev_production,vehicle_group
 2018-01,0.10,hatchback,821410000,white,fwd,33.47,207.4,7.18,64.4,143.7,no,5,5,200,92.03,2500.0,180.0,35.24,yes,o_to_dien
 2018-01,3.00,scooter,45177550,white,hub_motor,3.68,55.0,4.67,4.51,15.8,yes,5,2,200,92.03,2500.0,180.0,35.24,yes,xe_may_dien
 2018-02,0.10,hatchback,821340000,black,fwd,34.93,220.3,7.06,64.5,146.2,no,5,5,210,95.98,2510.0,179.5,35.24,yes,o_to_dien
